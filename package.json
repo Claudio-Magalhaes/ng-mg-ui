@@ -26,7 +26,6 @@
     "bootstrap": "^5.0.0-beta3",
     "ngx-bootstrap": "^7.0.0",
     "rxjs": "~6.6.0",
-    "sidebar": "file:./dist/sidebar",
     "mg-sidebar": "file:./dist/mg-sidebar",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
