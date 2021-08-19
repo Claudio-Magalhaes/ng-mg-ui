@@ -1,0 +1,54 @@
+
+/*********************************
+    3 - ESTILOS MINIFICADOS
+ */
+::ng-deep #mg-sidebar.minificado {
+
+  .container-navigation {
+    animation: .8s animacao-troca-estado;
+  }
+
+  .sidebar-navigation-principal-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 20pt;
+    margin: 0;
+    width: 10%;
+
+    icon, mat-icon, p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .sidebar-navigation-text {
+    display: none !important;
+  }
+
+  .sidebar-navigation-dropdown-icon {
+    display: none;
+  }
+}
+
+::ng-deep #mg-sidebar.minificado:after:hover {
+
+  .container-navigation {
+    animation: .8s animacao-troca-estado !important;
+  }
+}
+@keyframes animacao-troca-estado {
+  from {
+    opacity: 0;
+  }
+  10%{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

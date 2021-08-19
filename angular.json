@@ -31,9 +31,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "src/styles.scss",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -99,9 +104,41 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        }
+      }
+    },
+    "sidebar": {
+      "projectType": "library",
+      "root": "projects/sidebar",
+      "sourceRoot": "projects/sidebar/src",
+      "prefix": "mg",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/sidebar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/sidebar/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/sidebar/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sidebar/src/test.ts",
+            "tsConfig": "projects/sidebar/tsconfig.spec.json",
+            "karmaConfig": "projects/sidebar/karma.conf.js"
           }
         }
       }
