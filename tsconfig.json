@@ -15,6 +15,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
+      "mg-sidebar": [
+        "dist/mg-sidebar/mg-sidebar",
+        "dist/mg-sidebar"
+      ],
       "sidebar": [
         "dist/sidebar/sidebar",
         "dist/sidebar"

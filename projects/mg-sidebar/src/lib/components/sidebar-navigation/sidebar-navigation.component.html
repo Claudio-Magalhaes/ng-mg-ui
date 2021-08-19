@@ -1,0 +1,54 @@
+<ul
+  class="sidebar-navigation"
+  [class.subMenu]="isSubmenu"
+  [class.open]="open"
+>
+  <li *ngFor="let menu of menuList">
+    <a
+      class="item-sidebar-menu"
+      routerLink="{{menu.url}}"
+      *ngIf="!menu.subMenu; else tamplateSubMenu"
+      [class.active]="activeItemMenu(menu)"
+    >
+      <div class="sidebar-navigation-principal-icon">
+        <mat-icon>{{menu.icon}}</mat-icon>
+      </div>
+      <div class="sidebar-navigation-text" style="justify-content: flex-start; display: flex; width: 80%">
+          <span>
+              {{menu.nome}}
+          </span>
+      </div>
+    </a>
+
+
+    <ng-template #tamplateSubMenu>
+      <a
+        class="collapse-item-sidebar-menu"
+        style="display: flex !important"
+        (click)="navigationComponent.click()"
+        [class.active]="activeItemMenu(menu)"
+      >
+        <div class="sidebar-navigation-principal-icon">
+          <mat-icon>{{menu.icon}}</mat-icon>
+        </div>
+        <div class="sidebar-navigation-text" style="justify-content: flex-start; display: flex; width: 80%">
+          <span>
+              {{menu.nome}}
+          </span>
+        </div>
+        <div class="sidebar-navigation-dropdown-icon" [class.open]="navigationComponent.open">
+          <mat-icon>
+            expand_more
+          </mat-icon>
+        </div>
+      </a>
+
+      <app-sidebar-navigation
+        #navigationComponent
+        [isSubmenu]="true"
+        [menuList]="menu.subMenu"
+        [open]="(activeSubmenuUrl(menu) ? true : false)"
+      ></app-sidebar-navigation>
+    </ng-template>
+  </li>
+</ul>

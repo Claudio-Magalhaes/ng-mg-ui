@@ -1,8 +1,5 @@
 import {Component, HostListener, Input, ModuleWithProviders, OnInit, ViewChild} from '@angular/core';
 
-import { SidebarModule } from '../../sidebar.module';
-import { SidebarService } from "../../services/sidebar.service";
-
 interface InterfaceManuList {
   url?: string,
   nome: string,
@@ -16,7 +13,7 @@ interface InterfaceImgBackground {
 
 @Component({
   selector: 'mg-sidebar',
-  templateUrl: './sidebar.component.html',
+  templateUrl: './mg-sidebar.component.html',
   styleUrls: [
     './scss/_sidebar.component.scss',
     './scss/_sidebar.LG.component.scss',
@@ -24,7 +21,7 @@ interface InterfaceImgBackground {
     './scss/_sidebar.SM.component.scss'
   ]
 })
-export class SidebarComponent implements OnInit {
+export class MgSidebarComponent implements OnInit {
 
 
   @Input('menuList') menuList: InterfaceManuList[] = [];

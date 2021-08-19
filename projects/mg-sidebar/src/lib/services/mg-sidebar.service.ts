@@ -7,7 +7,7 @@ interface InterfaceImgBackground {
 @Injectable({
   providedIn: 'root'
 })
-export class SidebarService {
+export class MgSidebarService {
 
   constructor() {}
 }
