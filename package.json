@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-sidebar": "ng build mg-sidebar --watch",
+    "build-sidebar": "ng build mg-sidebar --prod",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
