@@ -15,7 +15,7 @@ export interface InterfaceManuList {
 })
 export class AppComponent {
   menuList: InterfaceManuList[] = [
-    {url: '/dashboard', nome: 'Dashboard', icon: 'settings'},
+    {url: '/', nome: 'Dashboard', icon: 'settings'},
     {
       nome: 'Dropdown', url: '/usuarios', icon: 'settings', subMenu: [
         {url: '/usuarios', nome: 'usuarios', icon: 'settings'},

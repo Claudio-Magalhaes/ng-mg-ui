@@ -1,0 +1,66 @@
+::ng-deep #mg-sidebar #mg-sidebar-logo {
+  height: 80px;
+  padding: .5rem;
+  margin: auto;
+
+
+  .container-logo {
+    height: 100%;
+    width: 100%;
+    display: inline-flex;
+    align-items: center !important;
+    padding: 0;
+  }
+
+  a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center !important;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+::ng-deep #mg-sidebar.minificado {
+
+  .container-logo {
+    justify-content: center !important;
+  }
+
+  .sm {
+    width: 70% !important;
+  }
+
+  .logoMarca {
+    display: none !important;
+  }
+}
+
+::ng-deep #mg-sidebar.maximizado, ::ng-deep #mg-sidebar.minificado:hover {
+
+  .container-logo {
+    justify-content: space-between !important;
+  }
+
+  .sm {
+    width: 20% !important;
+
+    img {
+      min-width: 80%;
+      max-width: 100%;
+      max-height: 40px !important;
+    }
+  }
+
+  .logoMarca {
+      width: 80%;
+      display: flex !important;
+
+      img {
+        min-width: 80%;
+        max-width: 100%;
+      }
+    }
+
+}
