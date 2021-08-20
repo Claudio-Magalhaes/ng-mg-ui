@@ -86,7 +86,7 @@ sendo esses;
 Esta apresentação se dá para telas acima de 991px, e ocupam um espaço fixo no
   laytout da aplicação de 260px.
   
-![maximizado](src/assets/img/doc/sidebar-maximizado.png?raw=true "teste")
+![maximizado](assets/img/doc/sidebar-maximizado.png?raw=true "teste")
 
 
 * minimizado:
@@ -97,12 +97,12 @@ Esta apresentação se dá para telas menores que 992px e maiores que 768px
 A propriedade HOVER irá espandir a tela, contudo sua apresentação não irá
 ocupar espaço no layout.
   
-![maximizado](src/assets/img/doc/sidebar-minimizado.png?raw=true "teste")
+![maximizado](assets/img/doc/sidebar-minimizado.png?raw=true "teste")
 
 * escondido:
 
 Essa apresentação se dá para telas de celulares, para telas menores que
 maiores que 769px.
 
-![maximizado](src/assets/img/doc/sidebar-sm-maximizado.png?raw=true "teste")
+![maximizado](assets/img/doc/sidebar-sm-maximizado.png?raw=true "teste")
 
