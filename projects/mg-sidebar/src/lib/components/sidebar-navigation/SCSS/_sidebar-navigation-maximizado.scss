@@ -59,19 +59,4 @@
     }
 
   }
-
-  .collapse-item-sidebar-menu- {
-    transition-duration: .5s;
-
-    .seta-collapse {
-      font-size: 15pt;
-      margin: auto auto;
-      padding-top: .1rem;
-      transition-duration: .5s;
-
-      &.open {
-        transform: rotate(180deg);
-      }
-    }
-  }
 }
