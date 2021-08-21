@@ -1,6 +1,8 @@
-import { NgModule } from '@angular/core';
+import { NgModule, ModuleWithProviders } from '@angular/core';
 import {CommonModule} from "@angular/common";
 import {RouterModule} from "@angular/router";
+
+import { MgSidebarService, CustomConfig } from "./services/mg-sidebar.service";
 
 import {MatButtonModule} from "@angular/material/button";
 import {MatIconModule} from "@angular/material/icon";
@@ -26,4 +28,11 @@ import { LogoComponent } from './components/logo/logo.component';
     MgSidebarComponent
   ]
 })
-export class MgSidebarModule { }
+export class MgSidebarModule {
+  static forRoot(config: CustomConfig): ModuleWithProviders<MgSidebarModule> {
+    return {
+      ngModule: MgSidebarModule,
+      providers: [MgSidebarService, { provide: 'config', useValue: config }]
+    };
+  }
+}

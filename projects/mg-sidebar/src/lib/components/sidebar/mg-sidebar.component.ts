@@ -1,4 +1,5 @@
-import {Component, HostListener, Input, ModuleWithProviders, OnInit, ViewChild} from '@angular/core';
+import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
+import { MgSidebarService } from "../../services/mg-sidebar.service";
 
 interface InterfaceManuList {
   url?: string,
@@ -6,12 +7,6 @@ interface InterfaceManuList {
   icon: string,
   subMenu?: InterfaceManuList[]
 }
-
-interface InterfaceImgBackground {
-  'backgroundImage': string,
-  'backgroundSize'?: string | 'cover',
-  'backgroundPosition'?: string | 'top center'
-};
 
 @Component({
   selector: 'mg-sidebar',
@@ -40,14 +35,16 @@ export class MgSidebarComponent implements OnInit {
 
   jss: {} = {};
 
-  constructor() {}
+  constructor(private config: MgSidebarService) {
+    console.log(config.configSidebar);
+  }
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
 
-    if (this.backgroundImage) {
+    if (this.config.configSidebar.img) {
       this.jss = {
-        'background-image': `url("${this.backgroundImage}")`,
+        'background-image': `url("${this.config.configSidebar.img}")`,
         'background-size': 'cover',
         'background-position': 'top center'
       };

@@ -1,6 +1,6 @@
-import { Injectable } from '@angular/core';
+import {Inject, Injectable} from '@angular/core';
 
-interface InterfaceImgBackground {
+export interface CustomConfig {
   img?: string;
 }
 
@@ -9,5 +9,9 @@ interface InterfaceImgBackground {
 })
 export class MgSidebarService {
 
-  constructor() {}
+  public configSidebar: CustomConfig;
+
+  constructor(@Inject('config') private config: CustomConfig) {
+    this.configSidebar = config;
+  }
 }
