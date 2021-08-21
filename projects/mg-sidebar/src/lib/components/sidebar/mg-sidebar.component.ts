@@ -35,23 +35,26 @@ export class MgSidebarComponent implements OnInit {
 
   jss: {} = {};
 
-  constructor(private config: MgSidebarService) {
-    console.log(config.configSidebar);
-  }
+  jssDivRoot: {} = {};
+
+  constructor(public config: MgSidebarService) {}
 
   ngOnInit(): void {
     this.innerWidth = window.innerWidth;
 
-    if (this.config.configSidebar.img) {
+    if (this.config.backgroungImage) {
       this.jss = {
-        'background-image': `url("${this.config.configSidebar.img}")`,
+        'background-image': `url("${this.config.backgroungImage.image}")`,
         'background-size': 'cover',
         'background-position': 'top center'
       };
+      this.jssDivRoot = {
+        'background': this.config.backgroungImage.corPelicula
+      }
     } else {
-      this.jss = {
-        'background-color': this.backgroundColor
-      };
+      this.jssDivRoot = {
+        'background': this.config.customColors.background
+      }
     }
   }
 

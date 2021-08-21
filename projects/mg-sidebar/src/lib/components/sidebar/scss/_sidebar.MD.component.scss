@@ -5,9 +5,9 @@
   ::ng-deep #mg-sidebar.minificado {
     nav {
       position: fixed;
-      width: 80px !important;
-      min-width: 80px !important;
-      max-width: 80px !important;
+      width: var(--minimizado) !important;
+      min-width: var(--minimizado) !important;
+      max-width: var(--minimizado) !important;
     }
 
     .container-navigation {
@@ -18,9 +18,9 @@
   ::ng-deep #mg-sidebar.maximizado, #mg-sidebar.minificado:hover {
     nav {
       //position: fixed;
-      width: 260px !important;
-      max-width: 260px !important;
-      min-width: 260px !important;
+      width: var(--maximizado) !important;
+      max-width: var(--maximizado) !important;
+      min-width: var(--maximizado) !important;
     }
 
     .container-navigation {

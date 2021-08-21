@@ -2,6 +2,13 @@
   class="sidebar-navigation"
   [class.subMenu]="isSubmenu"
   [class.open]="open"
+  [style.--active]="config.customColors.activeBackgroundColor"
+  [style.--hoverColor]="config.customColors.menuItemHover"
+  [style.--textColor]="config.customColors.textColor"
+  [style.--iconColor]="config.customColors.iconColor"
+  [style.--fontSizeItemMenu]="config.sidebarSize.fontSizeItemMenu"
+  [style.--fontSizeIconMenu]="config.sidebarSize.fontSizeIconMenu"
+  [style.--fontIconDropdownMenu]="config.sidebarSize.fontIconDropdownMenu"
 >
   <li *ngFor="let menu of menuList">
     <a

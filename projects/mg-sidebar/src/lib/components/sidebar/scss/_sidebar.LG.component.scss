@@ -5,9 +5,9 @@
   ::ng-deep #mg-sidebar.minificado {
     nav {
       position: fixed;
-      width: 80px !important;
-      min-width: 80px !important;
-      max-width: 80px !important;
+      width: var(--minimizado) !important;
+      min-width: var(--minimizado) !important;
+      max-width: var(--minimizado) !important;
     }
 
     .container-navigation {
@@ -17,9 +17,9 @@
 
   ::ng-deep #mg-sidebar.minificado:hover {
     nav {
-      width: 260px !important;
-      max-width: 260px !important;
-      min-width: 260px !important;
+      width: var(--maximizado) !important;
+      max-width: var(--maximizado) !important;
+      min-width: var(--maximizado) !important;
     }
 
     .container-navigation {
@@ -29,9 +29,9 @@
 
   ::ng-deep #mg-sidebar.maximizado {
     nav {
-      width: 260px;
-      max-width: 260px;
-      min-width: 260px;
+      width: var(--maximizado);
+      max-width: var(--maximizado);
+      min-width: var(--maximizado);
       text-align: center;
     }
 
@@ -43,8 +43,6 @@
       margin: 0;
       top: 0;
       left: 0;
-      background: rgba(0, 0, 0, .8);
-      //transition: all 0.3s;
     }
   }
 }

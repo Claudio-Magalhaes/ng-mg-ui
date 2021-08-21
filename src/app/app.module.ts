@@ -16,7 +16,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MgSidebarModule.forRoot({ img: 'assets/img/sidebar/sidebar.jpg' }),
+    MgSidebarModule.forRoot({ backgroundImage: { image: 'assets/img/sidebar/sidebar.jpg' } }),
     NgbModule
   ],
   providers: [],
