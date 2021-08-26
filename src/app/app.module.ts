@@ -7,6 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { MgSidebarModule } from "mg-sidebar";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HomeModule} from "./pages/home/home.module";
+
 
 @NgModule({
   declarations: [
@@ -16,8 +18,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MgSidebarModule.forRoot(),
-    NgbModule
+    MgSidebarModule.forRoot({ backgroundImage: { image: '/assets/img/sidebar/sidebar.jpg' } }),
+    NgbModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

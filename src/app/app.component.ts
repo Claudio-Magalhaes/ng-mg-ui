@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { InterfaceManuList } from "mg-sidebar";
+import { InterfaceMenuList } from "mg-sidebar";
 
 
 @Component({
@@ -8,8 +8,8 @@ import { InterfaceManuList } from "mg-sidebar";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  menuList: InterfaceManuList[] = [
-    {url: '/', nome: 'Dashboard', icon: 'settings'},
+  menuList: InterfaceMenuList[] = [
+    {url: '/sidebar', nome: 'Sidebar', icon: 'settings'},
     {
       nome: 'Dropdown', url: '/usuarios', icon: 'settings', subMenu: [
         {url: '/usuarios', nome: 'usuarios', icon: 'settings'},
