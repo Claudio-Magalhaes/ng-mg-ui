@@ -4,8 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "start-sidebar": "ng build mg-sidebar --watch",
-    "build-sidebar": "ng build mg-sidebar",
+    "sidebar-start": "ng build mg-sidebar --watch",
+    "sidebar-build": "ng build mg-sidebar",
+    "interceptors-start": "ng build ngx-mg-interceptors --watch",
+    "interceptors-build": "ng build ngx-mg-interceptors",
+    "modal-start": "ng build ngx-mg-modal --watch",
+    "modal-build": "ng build ngx-mg-modal",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

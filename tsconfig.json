@@ -19,6 +19,18 @@
         "dist/mg-sidebar/mg-sidebar",
         "dist/mg-sidebar"
       ],
+      "ngx-mg-interceptor-http": [
+        "dist/ngx-mg-interceptor-http/ngx-mg-interceptor-http",
+        "dist/ngx-mg-interceptor-http"
+      ],
+      "ngx-mg-interceptors-http": [
+        "dist/ngx-mg-interceptors-http/ngx-mg-interceptors-http",
+        "dist/ngx-mg-interceptors-http"
+      ],
+      "ngx-mg-modal": [
+        "dist/ngx-mg-modal/ngx-mg-modal",
+        "dist/ngx-mg-modal"
+      ],
       "sidebar": [
         "dist/sidebar/sidebar",
         "dist/sidebar"
