@@ -1,7 +1,7 @@
 import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import { MgSidebarService } from "../../services/mg-sidebar.service";
 
-interface InterfaceManuList {
+export interface InterfaceManuList {
   url?: string,
   nome: string,
   icon: string,

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
-import { MgSidebarService, CustomColor } from "../../services/mg-sidebar.service";
+import { MgSidebarService } from "../../services/mg-sidebar.service";
 
 export interface InterfaceManuList {
   url?: string,

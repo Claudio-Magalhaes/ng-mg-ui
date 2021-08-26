@@ -1,6 +1,6 @@
 import {Inject, Injectable} from '@angular/core';
 
-export interface CustomColor {
+export interface InterfaceCustomColor {
   activeBackgroundColor?: string,
   menuItemHover?: string,
   textColor?: string,
@@ -8,7 +8,7 @@ export interface CustomColor {
   background?: string
 }
 
-export interface SidebarSize {
+export interface InterfaceCustomSize {
   maximizado: string,
   minimizado: string,
   fontSizeItemMenu?: string,
@@ -16,15 +16,15 @@ export interface SidebarSize {
   fontIconDropdownMenu?: string
 }
 
-export interface BackgroundImage {
+export interface InterfaceBackgroundImage {
   image: string,
   corPelicula?: string
 }
 
 export interface CustomConfig {
-  customColors?: CustomColor,
-  sidebarSize?: SidebarSize,
-  backgroundImage?: BackgroundImage
+  customColors?: InterfaceCustomColor,
+  customSize?: InterfaceCustomSize,
+  backgroundImage?: InterfaceBackgroundImage
 }
 
 @Injectable({
@@ -34,7 +34,7 @@ export class MgSidebarService {
 
   public configSidebar: CustomConfig = {};
 
-  public customColors: CustomColor = {
+  public customColors: InterfaceCustomColor = {
     activeBackgroundColor: 'rgba(255, 255, 255, .2)',
     menuItemHover: 'rgba(255, 255, 255, .2)',
     textColor: 'white',
@@ -42,7 +42,7 @@ export class MgSidebarService {
     background: 'blue'
   }
 
-  public sidebarSize: SidebarSize = {
+  public customSize: InterfaceCustomSize = {
     maximizado: '260px',
     minimizado: '80px',
     fontSizeItemMenu: '16px',
@@ -50,7 +50,7 @@ export class MgSidebarService {
     fontIconDropdownMenu: '13pt'
   };
 
-  public backgroungImage: BackgroundImage | undefined = undefined;
+  public backgroungImage: InterfaceBackgroundImage | undefined = undefined;
 
   constructor(@Inject('config') private config: CustomConfig) {
     this.configSidebar = config;
@@ -62,10 +62,10 @@ export class MgSidebarService {
       }
     }
 
-    if (config.sidebarSize) {
-      this.sidebarSize = {
-        ...this.sidebarSize,
-        ...config.sidebarSize
+    if (config.customSize) {
+      this.customSize = {
+        ...this.customSize,
+        ...config.customSize
       }
     }
 

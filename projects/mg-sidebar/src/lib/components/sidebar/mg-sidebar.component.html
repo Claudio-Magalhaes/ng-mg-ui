@@ -2,8 +2,8 @@
   id="mg-sidebar"
   [class.minificado]="!open"
   [class.maximizado]="open"
-  [style.--maximizado]="config.sidebarSize.maximizado"
-  [style.--minimizado]="config.sidebarSize.minimizado"
+  [style.--maximizado]="config.customSize.maximizado"
+  [style.--minimizado]="config.customSize.minimizado"
 >
   <div (click)="closeBackground($event)" style="height: 100%" id="sidebar-background-sm">
     <nav [style]="jss" id="mg-nav-sidebar" #sideBar class="mg-nav-sidebar">
