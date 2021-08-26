@@ -55,24 +55,27 @@ export class MgSidebarService {
   constructor(@Inject('config') private config: CustomConfig) {
     this.configSidebar = config;
 
-    if (config.customColors) {
-      this.customColors = {
-        ...this.customColors,
-        ...config.customColors
-      }
-    }
+    if (typeof config === 'object') {
 
-    if (config.customSize) {
-      this.customSize = {
-        ...this.customSize,
-        ...config.customSize
+      if (config.customColors) {
+        this.customColors = {
+          ...this.customColors,
+          ...config.customColors
+        }
       }
-    }
 
-    if (config.backgroundImage) {
-      this.backgroungImage = {
-        image: config.backgroundImage.image,
-        corPelicula: config.backgroundImage.corPelicula ? config.backgroundImage.corPelicula : 'rgba(0, 0, 0, .8)'
+      if (config.customSize) {
+        this.customSize = {
+          ...this.customSize,
+          ...config.customSize
+        }
+      }
+
+      if (config.backgroundImage) {
+        this.backgroungImage = {
+          image: config.backgroundImage.image,
+          corPelicula: config.backgroundImage.corPelicula ? config.backgroundImage.corPelicula : 'rgba(0, 0, 0, .8)'
+        }
       }
     }
   }

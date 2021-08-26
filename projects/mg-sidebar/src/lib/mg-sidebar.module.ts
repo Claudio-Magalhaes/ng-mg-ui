@@ -29,7 +29,7 @@ import { LogoComponent } from './components/logo/logo.component';
   ]
 })
 export class MgSidebarModule {
-  static forRoot(config: CustomConfig): ModuleWithProviders<MgSidebarModule> {
+  static forRoot(config?: CustomConfig): ModuleWithProviders<MgSidebarModule> {
     return {
       ngModule: MgSidebarModule,
       providers: [MgSidebarService, { provide: 'config', useValue: config }]

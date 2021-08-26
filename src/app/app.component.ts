@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
+import { InterfaceManuList } from "mg-sidebar";
 
 
-
-export interface InterfaceManuList {
-  url?: string,
-  nome: string,
-  icon: string,
-  subMenu?: InterfaceManuList[]
-}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -19,14 +13,6 @@ export class AppComponent {
     {
       nome: 'Dropdown', url: '/usuarios', icon: 'settings', subMenu: [
         {url: '/usuarios', nome: 'usuarios', icon: 'settings'},
-        {url: '#', nome: 'teste', icon: 'settings'}
-      ]
-    }
-  ];
-  userMenuList: {url: string, nome: string, icon: string, subMenu?: {}[] | undefined}[] = [
-    {
-      url: '#', nome: 'teste', icon: 'settings', subMenu: [
-        {url: '#', nome: 'teste', icon: 'settings'},
         {url: '#', nome: 'teste', icon: 'settings'}
       ]
     }
