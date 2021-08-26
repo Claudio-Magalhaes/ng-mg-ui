@@ -1,10 +1,6 @@
 {
   "name": "ng-mg-ui",
   "version": "0.0.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Claudio-Magalhaes/ng-mg-ui"
-  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
