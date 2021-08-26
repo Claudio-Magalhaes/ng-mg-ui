@@ -1,11 +1,11 @@
 import {Component, HostListener, Input, OnInit, ViewChild} from '@angular/core';
 import { MgSidebarService } from "../../services/mg-sidebar.service";
 
-export interface InterfaceManuList {
+export interface InterfaceMenuList {
   url?: string,
   nome: string,
   icon: string,
-  subMenu?: InterfaceManuList[]
+  subMenu?: InterfaceMenuList[]
 }
 
 @Component({
@@ -22,7 +22,7 @@ export class MgSidebarComponent implements OnInit {
 
   @Input('backgroundColor') backgroundColor: string = 'blue';
 
-  @Input('menuList') menuList: InterfaceManuList[] = [];
+  @Input('menuList') menuList: InterfaceMenuList[] = [];
   @Input('userMenuList') userMenuList: any = [];
   @Input('backgroundImage') backgroundImage: string | undefined = undefined;
 

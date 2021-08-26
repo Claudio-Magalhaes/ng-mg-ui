@@ -39,7 +39,7 @@ export class MgSidebarService {
     menuItemHover: 'rgba(255, 255, 255, .2)',
     textColor: 'white',
     iconColor: 'white',
-    background: 'blue'
+    background: '#17a2b8'
   }
 
   public customSize: InterfaceCustomSize = {

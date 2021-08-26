@@ -1,11 +1,11 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
 import { MgSidebarService } from "../../services/mg-sidebar.service";
 
-export interface InterfaceManuList {
+export interface InterfaceMenuList {
   url?: string,
   nome: string,
   icon: string,
-  subMenu?: InterfaceManuList[]
+  subMenu?: InterfaceMenuList[]
 }
 
 @Component({
@@ -19,7 +19,7 @@ export interface InterfaceManuList {
 })
 export class SidebarNavigationComponent implements OnInit {
 
-  @Input('menuList') menuList: InterfaceManuList[] | any = [];
+  @Input('menuList') menuList: InterfaceMenuList[] | any = [];
   @Input('open') open?: boolean = false;
   @Input('isSubmenu') isSubmenu?: boolean = false;
 
@@ -34,7 +34,7 @@ export class SidebarNavigationComponent implements OnInit {
     this.open = !this.open;
   }
 
-  public activeItemMenu(menu: InterfaceManuList) {
+  public activeItemMenu(menu: InterfaceMenuList) {
 
     if (menu.url) {
       if (window.location.pathname === menu.url) {
@@ -45,7 +45,7 @@ export class SidebarNavigationComponent implements OnInit {
     return false;
   }
 
-  public activeSubmenuUrl(menu: InterfaceManuList){
+  public activeSubmenuUrl(menu: InterfaceMenuList){
     if (menu.url){
       if (window.location.pathname === menu.url) {
         return true;
