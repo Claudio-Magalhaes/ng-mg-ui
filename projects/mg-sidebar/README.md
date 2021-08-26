@@ -4,6 +4,8 @@
 
 Biblioteca gerada com [Angular CLI](https://github.com/angular/angular-cli) version 12.1.0.
 
+[clique aqui para ir a página de exemplo](http://mgui.uni5.net/sidebar)
+
 ## Início Rápido
 
 #### importe a biblioteca
