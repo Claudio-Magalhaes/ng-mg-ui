@@ -1,0 +1,42 @@
+::ng-deep .mg-card-icon {
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  border-radius: 3px;
+  color: white;
+  width: auto;
+  height: auto;
+
+  .mg-card-icon-root {
+    background-color: #3C4858 !important;
+  }
+
+  &.sm {
+    padding: 1.1rem;
+    font-size: 20px;
+    transform: translateY(-1rem) !important;
+  }
+
+  &.md {
+    padding: 1.5rem;
+    font-size: 50pt !important;
+    transform: translateY(-1.5rem) !important;
+
+    mat-icon {
+      font-size: 25pt !important;
+      width: auto;
+      height: auto;
+    }
+  }
+
+  &.lg {
+    padding: 2rem;
+    background-color: #3C4858 !important;
+    font-size: 30pt !important;
+    transform: translateY(-1.7rem) !important;
+
+    mat-icon {
+      font-size: 30pt !important;
+      width: auto;
+      height: auto;
+    }
+  }
+}

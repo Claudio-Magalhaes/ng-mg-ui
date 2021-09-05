@@ -6,6 +6,8 @@
     "start": "ng serve",
     "sidebar-start": "ng build mg-sidebar --watch",
     "sidebar-build": "ng build mg-sidebar",
+    "ui-start": "ng build ngx-mg-ui --watch",
+    "ui-build": "ng build ngx-mg-ui",
     "interceptors-start": "ng build ngx-mg-interceptors --watch",
     "interceptors-build": "ng build ngx-mg-interceptors",
     "modal-start": "ng build ngx-mg-modal --watch",
@@ -33,6 +35,7 @@
     "ngx-bootstrap": "^7.0.0",
     "rxjs": "~6.6.0",
     "mg-sidebar": "file:./dist/mg-sidebar",
+    "ngx-mg-ui": "file:./dist/ngx-mg-ui",
     "tslib": "^2.2.0",
     "zone.js": "~0.11.4"
   },

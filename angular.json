@@ -267,6 +267,37 @@
           }
         }
       }
+    },
+    "ngx-mg-ui": {
+      "projectType": "library",
+      "root": "projects/ngx-mg-ui",
+      "sourceRoot": "projects/ngx-mg-ui/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-mg-ui/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-mg-ui/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-mg-ui/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-mg-ui/src/test.ts",
+            "tsConfig": "projects/ngx-mg-ui/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-mg-ui/karma.conf.js"
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-mg-ui"

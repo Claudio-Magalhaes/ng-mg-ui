@@ -1,0 +1,25 @@
+.mg-card-title {
+  margin: auto auto 0 auto !important;
+  border-radius: .25rem;
+  width: 90%;
+  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  color: white;
+}
+
+.mg-card-title {
+
+  &.sm {
+    padding: .75rem;
+    transform: translateY(-1rem) !important;
+  }
+
+  &.md {
+    padding: 1.10rem;
+    transform: translateY(-1.5rem) !important;
+  }
+
+  &.lg {
+    padding: 1.5rem;
+    transform: translateY(-1.7rem) !important;
+  }
+}

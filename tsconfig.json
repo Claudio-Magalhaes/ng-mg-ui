@@ -31,6 +31,10 @@
         "dist/ngx-mg-modal/ngx-mg-modal",
         "dist/ngx-mg-modal"
       ],
+      "ngx-mg-ui": [
+        "dist/ngx-mg-ui/ngx-mg-ui",
+        "dist/ngx-mg-ui"
+      ],
       "sidebar": [
         "dist/sidebar/sidebar",
         "dist/sidebar"

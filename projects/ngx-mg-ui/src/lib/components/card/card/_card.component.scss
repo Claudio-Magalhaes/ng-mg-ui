@@ -1,0 +1,20 @@
+.mg-card {
+  margin-bottom: .5rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 14%);
+}
+
+.mg-card {
+  &.sm {
+    margin-top: 1.1rem;
+  }
+
+  &.md {
+    margin-top: 1.6rem;
+  }
+
+  &.lg {
+    margin-top: 1.8rem;
+  }
+}

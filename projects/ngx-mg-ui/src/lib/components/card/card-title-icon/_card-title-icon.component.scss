@@ -1,0 +1,23 @@
+::ng-deep .mg-card-title-icon {
+  width: 90%;
+  max-width: 90% !important;
+  position: relative;
+  margin: auto auto 0 auto !important;
+
+  .mg-card-title-icon-root {
+    max-width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  p {
+    font-size: 14px !important;
+    padding-top: 10px;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #999;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    color: #3C4858;
+  }
+}
