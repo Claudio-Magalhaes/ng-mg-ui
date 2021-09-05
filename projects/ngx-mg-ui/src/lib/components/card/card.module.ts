@@ -6,6 +6,7 @@ import { CardBodyComponent } from './card-body/card-body.component';
 import { CardFooterComponent } from './card-footer/card-footer.component';
 import { CardTitleIconComponent } from './card-title-icon/card-title-icon.component';
 import { CardIconComponent } from './card-icon/card-icon.component';
+import { CardSizeDirective } from './directive/card-size.directive';
 
 
 
@@ -16,10 +17,14 @@ import { CardIconComponent } from './card-icon/card-icon.component';
     CardBodyComponent,
     CardFooterComponent,
     CardTitleIconComponent,
-    CardIconComponent
+    CardIconComponent,
+    CardSizeDirective
   ],
   imports: [
     CommonModule
+  ],
+  providers:[
+    CardSizeDirective
   ],
   exports: [
     CardComponent,
@@ -27,7 +32,8 @@ import { CardIconComponent } from './card-icon/card-icon.component';
     CardBodyComponent,
     CardFooterComponent,
     CardTitleIconComponent,
-    CardIconComponent
+    CardIconComponent,
+    CardSizeDirective
   ]
 })
 export class CardModule { }

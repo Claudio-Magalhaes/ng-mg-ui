@@ -13,3 +13,4 @@ export * from './lib/components/card/card-title-icon/card-title-icon.component';
 export * from './lib/components/card/card-body/card-body.component';
 export * from './lib/components/card/card-footer/card-footer.component';
 export * from './lib/components/card/card-icon/card-icon.component';
+export * from './lib/components/card/directive/card-size.directive';
